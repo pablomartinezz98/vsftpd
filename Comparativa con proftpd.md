@@ -2,10 +2,10 @@
 
 Las comparativas entre proftpd y vsftpd son las siguientes:
 
-- Son servidores FTP
+- Es un servidor FTP
 
 - Tiene soporte de encriptación SSL
 
-- Seguros y estables
+- Seguro y estable
 
-- Pueden crear usuarios virtuales
+- Puede crear usuarios virtuales
