@@ -53,5 +53,22 @@ chown nombre_usuario:nombre_usuario /home/nombre_usuario
  
  ![fichero](/imagenes/comprobacion1.PNG)
  
+ ### Anónimo tiene solo permiso de lectura en su directorio de trabajo
+ 
+ - Modificamos el archivo vsftpd.conf para activar anonymous
+ 
+  ![fichero](/imagenes/anonymous.PNG)
+  
+  - Creamos un archivo en /srv/ftp que es el directorio de anonymous
+  
+  ![fichero](/imagenes/anonymous2.PNG)
+ 
+ - Nos conectamos como anonymous e intentamos crear un directorio
+ 
+  ![fichero](/imagenes/anonymous3.PNG)
+  
+ ### Anónimo tiene permiso de escritura en el directorio sugerencias, que es un subdirectorio de su directorio raíz
+ 
+ ### Creación de usuarios virtuales
 
 # 6.- Acceso seguro al servidor FTP
