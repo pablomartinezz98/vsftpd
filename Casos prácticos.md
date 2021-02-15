@@ -69,6 +69,21 @@ chown nombre_usuario:nombre_usuario /home/nombre_usuario
   
  ### Anónimo tiene permiso de escritura en el directorio sugerencias, que es un subdirectorio de su directorio raíz
  
+ - Creamos el directorio sugerencias dentro de /srv/ftp y le damos los permisos ftp:nogroup y le quitamos el permiso de escritura
+ 
+ ![fichero](/imagenes/anonymous4.PNG)
+ 
+ - Modificamos el archivo vsftpd.conf
+ 
+ ![fichero](/imagenes/anonymous6.PNG)
+ 
+ - Comprobación
+  
+  Podemos subir un archivo al directorio sugerencias
+  
+  ![fichero](/imagenes/anonymous5.PNG)
+ 
+ 
  ### Creación de usuarios virtuales
 
 # 6.- Acceso seguro al servidor FTP
