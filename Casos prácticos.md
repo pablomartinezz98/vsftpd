@@ -10,11 +10,11 @@ Nos crea el usuario ftp
 
 # 3.- Servicio asociado
 
-
+vsftpd.serv
 
 # 4.- Ficheros de configuración
 
-![fichero](/imagenes/fichero.png)
+vsftpd.conf
 
 # 5.- Acceso al servidor FTP: 
 
@@ -24,33 +24,34 @@ cp vsftpd.conf vsftpd.conf.original
 
 Nos conectamos con nuestro usuario del sistema
 
-![fichero](/imagenes/sistema.png)
 
- - A los usuarios del sistema los enjaularemos
+### Enjaular al los usuarios del sistema
 
-Copiamos nuestro archivo por si nos ocurre algún error
+- Modificamos el archivo de configuración vsdtpd.conf
 
+![fichero](/imagenes/configuracion1.PNG)
 
+![fichero](/imagenes/configuracion2.PNG)
 
-Configuramos el archivo vsftpd.conf
+- Nos creamos el usuario del sistema
+
+adduser nombre_usuario
+
+- Creamos directorio
+
+mkdir /home/nombre_usuario
+
+- Damos permisos al directorio creado
+
+chown nombre_usuario:nombre_usuario /home/nombre_usuario
  
-
-
-Creamos nuevo usuario
-
-![fichero](/imagenes/usuario.png)
-
-Añadimos el usuario al fichero chroot_list
-
-![fichero](/imagenes/anadir.png)
-
-- Anónimo tiene solo permiso de lectura
-
-
-- Anónimo tiene permiso de escritura en el directorio sugerencias, que es un subdirectorio de su directorio raíz
-
-
-- Creación de usuarios vituales
-
+ - Quitamos los permisos de escritura
+ 
+ chmod a-w /home/nombre-usuario
+ 
+ - Comprobación
+ 
+ ![fichero](/imagenes/comprobacion1.PNG)
+ 
 
 # 6.- Acceso seguro al servidor FTP
