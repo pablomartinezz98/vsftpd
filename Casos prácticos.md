@@ -94,37 +94,32 @@ chown nombre_usuario:nombre_usuario /home/nombre_usuario
  
  - Modificamos el archivo vsftpd.conf
  
- ![fichero](/imagenes/anonymous7.PNG)
+ ![fichero](/imagenes/anonymous18.PNG)
  
- - Creamos el archivo y las contraseñas 
+ - Creamos la carpeta donde se van a guardan la lista de los usuarios virtuales.
+
+ ![fichero](/imagenes/anonymous19.PNG)
+  
+ - Modificamos el archivo /etc/pam.d/vsftpd
  
- ![fichero](/imagenes/anonymous8.PNG)
- 
- Vemos el archivo
- 
- ![fichero](/imagenes/anonymous9.PNG)
- 
- - Configuramos el archivo vsftpd que se encuentra en /etc/pam.d/
- 
- ![fichero](/imagenes/anonymous10.PNG)
+ ![fichero](/imagenes/anonymous20.PNG)
  
  - Creación del usuario virtual
  
- ![fichero](/imagenes/anonymous11.PNG)
+ ![fichero](/imagenes/anonymous21.PNG)
  
  - Creamos el directorio
  
-  ![fichero](/imagenes/anonymous12.PNG)
+  ![fichero](/imagenes/anonymous22.PNG)
   
- - Entramos el el directorio anterior y creamos un archivo por cada usuario que querramos crear
+ - Dentro del directorio creamos un archivo por cada usuario 
  
- ![fichero](/imagenes/anonymous13.PNG)
+ ![fichero](/imagenes/anonymous23.PNG)
  
- - Creamos el directorio del usuario
+ - Creación de directorios
  
-  ![fichero](/imagenes/anonymous14.PNG)
+ ![fichero](/imagenes/anonymous24.PNG)
 
-  
 # 6.- Acceso seguro al servidor FTP
 
 ### Vamos a crear un certificado para la seguridad
@@ -146,5 +141,4 @@ apt install openssl
 Nos conectamos con un usuario y nos sale el siguiente certificado
 
 ![fichero](/imagenes/anonymous17.PNG)
-
 
