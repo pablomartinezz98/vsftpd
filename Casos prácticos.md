@@ -31,7 +31,7 @@ Nos conectamos con nuestro usuario del sistema
 
 ![fichero](/imagenes/configuracion1.PNG)
 
-![fichero](/imagenes/configuracion2.PNG)
+![fichero](/imagenes/configuracion10.PNG)
 
 - Nos creamos el usuario del sistema
 
