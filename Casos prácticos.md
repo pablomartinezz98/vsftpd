@@ -75,7 +75,7 @@ chown nombre_usuario:nombre_usuario /home/nombre_usuario
  
  - Modificamos el archivo vsftpd.conf
  
- ![fichero](/imagenes/anonymous6.PNG)
+ ![fichero](/imagenes/escritura.PNG)
  
  - Comprobación
   
