@@ -98,7 +98,9 @@ chown nombre_usuario:nombre_usuario /home/nombre_usuario
  
  - Creamos la carpeta donde se van a guardan la lista de los usuarios virtuales.
 
- ![fichero](/imagenes/anonymous19.PNG)
+  mkdir /etc/vsftpd
+  
+  ![fichero](/imagenes/anonymous18.PNG)
   
  - Modificamos el archivo /etc/pam.d/vsftpd
  
@@ -116,9 +118,15 @@ chown nombre_usuario:nombre_usuario /home/nombre_usuario
  
  ![fichero](/imagenes/anonymous23.PNG)
  
- - Creación de directorios
+ - Creamos el directorio donde podrá acceder 
  
- ![fichero](/imagenes/anonymous24.PNG)
+ mkdir /srv/ftp/user1
+ 
+ chown vsftpd:nogroup user1/
+ 
+ - Comprobación
+
+![fichero](/imagenes/anonymous25.PNG)
 
 # 6.- Acceso seguro al servidor FTP
 
