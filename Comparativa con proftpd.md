@@ -9,7 +9,5 @@ Las comparativas entre proftpd y vsftpd son las siguientes:
 - Seguros y estables
 
 - Pueden crear usuarios virtuales
-- 
-- Es compatible y tiene soporte de IPv6
 
 Los dos son buenos servidores FTP y los más seguros actualmente, es dificil decir cuál es mejor ya que depende de para que lo querramos utilizar y se adapte más a nuestras necesidades.
